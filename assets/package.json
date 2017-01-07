@@ -1,0 +1,30 @@
+{
+  "name": "angular-material-temp",
+  "version": "0.0.1",
+  "description": "Express Angular 1 App",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnaisur/angular-material-temp.git"
+  },
+  "keywords": [
+    "bus",
+    "szczecin",
+    "angular"
+  ],
+  "author": "Jakub Szalaty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nnaisur/angular-material-temp/issues"
+  },
+  "homepage": "https://github.com/nnaisur/angular-material-temp#readme",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-animate": "^1.6.0",
+    "angular-aria": "^1.6.0",
+    "angular-material": "^1.1.1",
+    "angular-route": "^1.6.0",
+    "angular-ui-router": "^0.3.2",
+    "lodash": "^4.17.2"
+  }
+}

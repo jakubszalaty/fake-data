@@ -1,0 +1,32 @@
+{
+  "name": "fake-data",
+  "version": "0.0.1",
+  "description": "Express Angular 1 App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node debug index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnaisur/fake-data.git"
+  },
+  "keywords": [
+    "express",
+    "bus",
+    "szczecin",
+    "angular"
+  ],
+  "author": "Jakub Szalaty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nnaisur/fake-data/issues"
+  },
+  "homepage": "https://github.com/nnaisur/fake-data#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "faker": "^3.1.0",
+    "lodash": "^4.17.2"
+  }
+}
