@@ -1,12 +1,30 @@
 'use strict'
 
-const PORT = process.env.APP_PORT || 1337
 
+/**
+ * Load modules
+ */
+const http = require('http')
 const express = require('express')
-const app = express()
-
 const faker = require('faker')
+
+
+/**
+ * Set port to listening
+ * @type {Number}
+ */
+const PORT = process.env.PORT || 80
+
+/**
+ * Setup locale
+ * @type {String}
+ */
 faker.locale = 'pl'
+
+/**
+ * Setup express app
+ */
+const app = express()
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html')
@@ -42,6 +60,11 @@ app.get('/numbers.json', function (req, res) {
 
 app.use('/', express.static('assets'))
 
-app.listen(PORT, function () {
-  console.log(`App listening on port ${PORT}!`)
+/**
+ * Setup http server
+ */
+const server = http.createServer(app).listen(PORT)
+
+server.on('request',(req, res) => {
+  console.log(`${new Date().toISOString().replace(/T|Z/g,' ')}: ${res.req.method} : ${res.req.url} `)
 })
